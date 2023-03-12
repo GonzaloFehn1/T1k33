@@ -9,6 +9,26 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/* ScrollBar */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fondo Transparente */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9d9d9d;
+}
+
+/* End ScrollBar */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
