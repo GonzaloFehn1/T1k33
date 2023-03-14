@@ -414,28 +414,6 @@ h6 {
   box-shadow: 0 8px 28px rgba(110, 22, 207, 0.45);
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: inline-block;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: #5f687b;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hero .btn-watch-video i {
-  color: #949cac;
-  font-size: 32px;
-  line-height: 0;
-  margin-right: 8px;
-}
-
-#hero .btn-watch-video:hover i {
-  color: #A85AFF;
-}
-
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -517,31 +495,11 @@ section {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-bottom: 0;
   color: #A85AFF;
   position: relative;
   z-index: 2;
-}
-
-.section-title span {
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-  opacity: 0.4;
-  font-size: 100px;
-  line-height: 100%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 0px;
-  left: 50%;
-  z-index: 1;
-  font-family: "Poppins",sans-serif;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(110, 22, 20, 0.35);
-  opacity: 0.4;
 }
 
 .section-title p {
