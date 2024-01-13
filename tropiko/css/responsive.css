@@ -34,6 +34,10 @@
 
     }
 
+    .btnvermas {
+        width: 50% !important;
+    }    
+
     .slider_section .custom_carousel-control {
 
         position: absolute;
@@ -99,11 +103,19 @@
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .btnvermas {
+        width: 50% !important;
+    }    
+}
 
 @media (max-width: 400px) {}
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .btnvermas {
+        width: 50% !important;
+    }    
+}
 
 @media (min-width: 1200px) {
     .container {

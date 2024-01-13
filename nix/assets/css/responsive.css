@@ -1,0 +1,43 @@
+@media (max-width: 1300px) {
+  
+}
+
+@media (max-width: 1120px) {
+  
+}
+
+@media (max-width: 992px) {
+  
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 480px) {
+  .pricing-tables .item span {
+    font-size: 35px;    
+    margin-left: -7%;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing-tables .item span {
+    font-size: 35px;    
+    margin-left: -7%;
+  }
+}
+
+@media (max-width: 376px) {
+  .pricing-tables .item span {
+    font-size: 30px;    
+    margin-left: -10%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  
+}
