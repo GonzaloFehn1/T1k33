@@ -2,485 +2,424 @@
 <html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Tikee</title>
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-  <!-- font awesome style -->
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="assets/css/responsive.css" rel="stylesheet" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<meta charset="utf-8">
+<title>G&G Luxury Toys - Home</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+<link rel="shortcut icon" type="image/icon" href="img/favicon.png"/>
+<script src="https://kit.fontawesome.com/e5b185397b.js" crossorigin="anonymous"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <style>
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  .cardprice {    
-    padding: 25px;
-    border-radius: 30px;  
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
-    width: 100%;  
-    margin-top: 3%;  
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif !important;
+    }
+    
+    .container {
+        overflow: hidden;
+        .slider {
+            animation: slidein 30s linear infinite;
+            white-space: nowrap;
+            .logos {
+                width: 100%;
+                display: inline-block;
+                margin: 0px 0;
+                .fab {
+                    width: calc(100% / 5);
+                    animation: fade-in 1.5s 
+                    cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+                }
+            }
+        }
+    }
+
+    @keyframes slidein {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+        to {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* section-header */
+    .section-header{
+        position: relative;
+        text-align: center;
+    }
+    .section-header h2{
+        position: relative;
+        font-size: 36px;
+        font-weight: 500;
+        padding-bottom: 35px;
+    }
+    .section-header h2:before {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -42px;
+    }
+    .section-header p{color: #444a57;text-transform: capitalize;margin-bottom:10px;}
+    .section-header h2 span,.section-header p span{text-transform: lowercase;}
+
+    /* section-header */
+
+    .titlesection {
+		color: black;
+	}
+
+	.labelinput {
+        color: #000;
+        float: left;
+	}
+
+    .modelo, .marca, .precio {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-vermas {
+        background-color: #000;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        color: #FFF;
+        font-family: poppins, sans-serif;
+        text-decoration: none !important;
+    }
+
+    .card {
+        border: none;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 10%;
+    }
+
+    .mapa {
+		width: 100%;
+	}
+
+    footer {
+		background: #212529;
+	}
+
+    .herotxt {
+        font-size: 70px;
+        text-shadow: 2px 4px 5px rgba(0,0,0,0.74);
+    }
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#1aba55;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+    }
+
+    .my-float{
+	    margin-top:14px;
+    }
+    .container {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
   }
+}
 
-  .cardprice em{
-    color: #ff695f;
-    font-size: 15px;
-    display: block;
-    margin-top: 25px;
-    text-decoration: line-through;
-    font-style: normal;
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-
-  .cardprice span {
-    font-size: 25px;
-    color: #000000;
-    font-weight: 700;
-    display: block;
-    margin-top: -5px;
+  to {
+    transform: translate3d(-100%, 0, 0);
   }
+}
 
-  .cardprice ul li {
-    display: block;
-    font-size: 15px;
-    color: #7a7a7a;
-    margin-bottom: 20px;
-    margin-top: 15%;
-    margin-left: -18%;
-    text-align: left;
-  }  
-
-  .client {
-    text-decoration: none; 
-    color: #000;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-
-  .footer-area {
-    position: relative;
-    min-height: 50vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #7335b7;
-    border-radius: 350px 0 0 0;
-  }  
-
-  </style>
+  100% {
+    opacity: 1;
+  }
+}
+</style>
 </head>
 
 <body>
+  
 
-<div class="hero_area">
-  <!-- Nav -->
-  <header class="header_section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            <img src="assets/images/logo.png"> <b>Tikee</b>
-          </span>
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <img src="img/logo.png" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"><b>Home</b> <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios"><b>Servicios</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#presupuesto"><b>Presupuesto</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio"><b>Portfolio</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq"><b>FAQ</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto"><b>Contacto</b></a>
-            </li>
-          </ul>            
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- End Nav -->
-
-  <!-- Hero -->
-  <section class="slider_section">      
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="assets/images/slider-img.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box" style="font-family: 'Montserrat', sans-serif;">
-            <h1>
-              <b>Gestión de sitios</b>              
-            </h1>
-            <p>
-              Un sitio web atractivo no solo es una ventana a su negocio, sino también una herramienta que puede convertir visitantes en clientes.
-            </p>
-            <div class="btn-box">
-              <a href="#servicios" class="btn1" style="text-decoration: none;">
-                <b>Ver Más <i class="fa-solid fa-angle-down"></i></b>
-              </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link" style="color: #eb00d8 !important;"><b>Home</b></a>
+                <a href="#" class="nav-item nav-link"><b>Contacto</b></a>
+                <a href="#" class="nav-item nav-link"><b>Eventos</b></a>
+                <a href="#" class="nav-item nav-link"><b>Shop</b></a>
             </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Start -->
+    <div class="carousel-header">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="img/hero6.jpg" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+</div>
+<!-- Navbar & Hero End -->
+
+<br><br><br>
+
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="container rounded">
+        <div class="section-header">
+            <h2 style="color: #000;"><b>NUESTRAS MARCAS</b></h2>
+        </div>
+        <div class="slider">
+          <div class="logos">
+            <img src="img/marcas/1.png" alt="">
+            <img src="img/marcas/2.png" alt="">
+            <img src="img/marcas/3.png" alt="">
+            <img src="img/marcas/4.png" alt="">
+            <img src="img/marcas/5.png" alt="">
+            <img src="img/marcas/6.png" alt="">
+            <img src="img/marcas/7.png" alt="">
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Hero -->
-</div>
+  
+  </div>
 
-<!-- Servicios -->
-<section class="service_section layout_padding" id="servicios">
-  <div class="container">
-    <div class="heading_container">
-      <h5><b>- SERVICIOS -</b></h5>
-      <h2>Nuestros Servicios</h2>
-      <p>
-        Sabemos que la primera impresión cuenta. Nuestros servicios no solo se centran en atraer nuevos clientes, sino también retenerlos.
-      </p>
+<br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-header">
+                <h2 style="color: #000;"><b>NUESTROS SERVICIOS</b></h2>
+            </div>
+        </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-lg-3">
-        <div class="box">
-          <div class="img-box">
-            <img src="assets/images/s1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Gestión de Google 
-            </h5>
-            <p>
-              Gestión de tu negocio en Maps y Google MyBusiness.
-            </p>            
-          </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <center>
+                <div class="card" style="width: 18rem; box-shadow: none !important;">
+                    <div class="card-body">
+                        <center>
+                            <div class="logo">
+                                <img src="img/icons8-cuenta-verificada-50.png" alt="">
+                            </div>
+                            <h5 class="card-title">VENTA 100% SEGURA</h5>
+                        </center>
+                    </div>
+                </div>
+            </center>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="box">
-          <div class="img-box">
-            <img src="assets/images/s2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Gestión de Visitas
-            </h5>
-            <p>
-              Gestión de búsquedas y visitas de Google.
-            </p>            
-          </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <center>
+                <div class="card" style="width: 18rem; box-shadow: none !important;">
+                    <div class="card-body">
+                        <center>
+                            <div class="logo">
+                                <img src="img/icons8-hombre-de-negocios-50.png" alt="">
+                            </div>
+                            <h5 class="card-title">GESTIÓN DE PRINCIPIO A FIN</h5>
+                        </center>
+                    </div>
+                </div>
+            </center>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="box">
-          <div class="img-box">
-            <img src="assets/images/icons8-ver-carrusel-50.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Página Web
-            </h5>
-            <p>
-              Un sitio web exclusivo para tu negocio.
-            </p>            
-          </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <center>
+                <div class="card" style="width: 18rem; box-shadow: none !important;">
+                    <div class="card-body">
+                        <center>
+                            <div class="logo">
+                                <img src="img/icons8-mensaje-50.png" alt="">
+                            </div>
+                            <h5 class="card-title">ATENCIÓN PERSONALIZADA</h5>
+                        </center>
+                    </div>
+                </div>
+            </center>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="box">
-          <div class="img-box">
-            <img src="assets/images/icons8-cms-50.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Gestión de Hosting
-            </h5>
-            <p>
-              Gestión de certificados SSL y del sitio web.
-            </p>            
-          </div>
-        </div>
-      </div>
-    </div>    
-  </div>
-</section>
-<!-- End Servicios -->
-
-<!-- Precio -->
-<section id="presupuesto">
-  <div class="container">
-    <div class="row"> 
-      <div class="col-12">
-        <div>
-          <center>
-            <h5><b>- PRESUPUESTO -</b></h5>
-            <h2><b>Nuestros Paquetes</b></h2>
-            <h5>Aquí, podrás observar que paquete de servicios se ajusta a sus necesidades.</h5>
-            <br>
-          </center>          
-        </div>
-      </div>
     </div>
-    <div class="row">      
-      <div class="col-sm-12 col-md-6 col-lg-6 col-12">
-        <center>
-          <div class="card cardprice card1" style="width: 18rem;">                  
-            <div class="card-body">          
-              <h5><b>PAQUETE BASICO</b></h5>              
-              <em>$30,000.00</em>
-              <span><b>$20,000.00ARS</b></span>
-              <ul>
-                <li><i class="fa-regular fa-circle-check"></i> Registro y Verificación en Google Maps.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Optimización de la Información de Negocio.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Destacado en Categorías Relevantes.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Soporte Técnico Especializado.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Asesoramiento Estratégico.</li>
-              </ul> 
-              <div>                
-                <a href="https://api.whatsapp.com/send?phone=5491135869922" style="text-decoration: none;"><b>OBTENER <i class="fa-solid fa-angle-right"></i></b></a>
-              </div>           
-            </div>            
-          </div>
-        </center>        
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6 col-12">
-        <center>
-          <div class="card cardprice card1" style="width: 18rem;">                  
-            <div class="card-body">          
-              <h5><b>PAQUETE V.I.P</b></h5>              
-              <em>$60usd</em>
-              <span><b>$50,000.00ARS</b></span>
-              <ul>
-                <li><i class="fa-regular fa-circle-check"></i> Registro y Verificación en Google Maps.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Integración con Sitio Web.</li>
-                <li><i class="fa-regular fa-circle-check"></i> Logos y diseños a medida.</li>
-                <li><i class="fa-regular fa-circle-check"></i> SEO (optimización para motores de búsqueda).</li>
-                <li><i class="fa-regular fa-circle-check"></i> Soporte Técnico Especializado.</li>                
-              </ul> 
-              <div>                
-                <a href="https://api.whatsapp.com/send?phone=5491135869922" style="text-decoration: none;"><b>OBTENER <i class="fa-solid fa-angle-right"></i></b></a>
-              </div>           
-            </div>            
-          </div>
-        </center>        
-      </div>    
-    </div>
-  </div>
-</section>
-<!-- End Precio -->
-
-<!-- Portfolio -->
-<div class="container" id="portfolio">
-  <div class="row">
-    <div class="col-12">
-      <div style="margin-top: 8%;">
-        <center>
-          <h5><b>- PORTFOLIO -</b></h5>
-          <h2><b>Nuestros Clientes</b></h2>
-          <h5>Presione en cualquiera de nuestros clientes para visualizar su sitio web.</h5>
-          <br>
-        </center>          
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-3 col-12">
-      <center>        
-        <a href="./nix/index.html" class="client"><img src="assets/images/nixlogo.png"></a>
-      </center>      
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-3 col-12">
-      <center>        
-        <a href="./tropiko/index.html" class="client"><img src="assets/images/tropiko.png"></a>
-      </center>      
-    </div>    
-    <div class="col-sm-12 col-md-6 col-lg-3 col-12">
-      <center>
-        <a href="./el-timon/index.html" class="client"><img src="assets/images/timonlogo.jpg"></a>
-      </center>      
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-3 col-12">
-      <center>
-        <a href="./br-barber/index.html" class="client"><img src="assets/images/logobr.png"></a>
-      </center>      
-    </div>    
-  </div>
 </div>
-<!-- End Portfolio -->
 
-<!-- FAQ -->
-<section class="service_section layout_padding" id="faq">
-  <div class="container">
-    <div class="heading_container">
-      <h5><b>- FAQ -</b></h5>
-      <h2>¿Quienes Somos?</h2>
-      <h5>
-        Somos una empresa de Software dedicada al Diseño Web.
-      </h5>
-    </div><br>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            ¿En qué consisten sus servicios de Google Maps y Desarrollo de Sitios Web?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" style="text-align: left;" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h4><b>SERVICIOS DE GOOGLE MAPS</b></h4>            
-            <h6>Nuestros servicios de Google Maps están diseñados para potenciar la visibilidad y accesibilidad de tu negocio. Nuestros servicios incluyen:</h6><br>
-            <h6><b>Registro y Optimización</b></h6>
-            <h6>Nos encargamos del registro y la optimización de la información de tu negocio en Google Maps para garantizar que sea completa y atractiva.</h6><br>
-            <h6><b>Destacado en Categorías Relevantes</b></h6>
-            <h6>Aseguramos que tu negocio esté categorizado de manera precisa, destacando en las áreas que son más relevantes para tus clientes potenciales.</h6><br>
-            <h6><b>Actualizaciones Periódicas</b></h6>
-            <h6>Mantenemos la información de tu negocio actualizada en Google Maps, reflejando cambios en horarios, servicios y más.</h6><br>
-            <hr>
-            <h4><b>DESARROLLO DEL SITIO WEB</b></h4>            
-            <h6>Ofrecemos soluciones integrales de desarrollo web que van más allá de la estética. Nuestros servicios incluyen:</h6><br>
-            <h6><b>Diseño Personalizado y Funcional</b></h6>
-            <h6>Creamos sitios web atractivos y funcionales que reflejen la identidad única de tu negocio y proporcionen una experiencia de usuario excepcional.</h6><br>
-            <h6><b>Optimización para Celulares</b></h6>
-            <h6>Garantizamos que tu sitio sea accesible y atractivo en dispositivos móviles, asegurando una experiencia consistente para todos los visitantes.</h6><br>
-            <h6><b>Gestión de Contenido</b></h6>
-            <h6>Ofrecemos soluciones de gestión de contenido para mantener tu sitio web siempre actualizado y relevante.</h6>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            ¿Cómo puedo beneficiarme de tener presencia en Google Maps?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" style="text-align: left;" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <h6>Tener presencia en Google Maps ofrece una serie de ventajas significativas para tu negocio:</h6>            
-            <h6>Nuestros servicios de Google Maps están diseñados para potenciar la visibilidad y accesibilidad de tu negocio. Nuestros servicios incluyen:</h6><br>
-            <h6><b>Visibilidad Local</b></h6>
-            <h6>Aparecer en Google Maps aumenta tu visibilidad local, permitiendo que los clientes cercanos te encuentren fácilmente cuando buscan productos o servicios similares.</h6><br>
-            <h6><b>Confianza del Cliente</b></h6>
-            <h6>Contar con una presencia en Google Maps construye confianza. Los clientes confían en las empresas que pueden ser ubicadas fácilmente en google maps.</h6><br>
-            <h6><b>Aumento de Tráfico a Tienda Física</b></h6>
-            <h6>Facilita a los clientes la ubicación de tu ubicación física, lo que puede resultar en un aumento del tráfico a tu tienda o negocio.</h6><br>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            ¿Ofrecen soporte técnico o asistencia después de implementar sus servicios?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" style="text-align: left;" data-bs-parent="#accordionExample">
-          <div class="accordion-body">            
-            <h6>¡Absolutamente! En Tikee, valoramos la relación continua con nuestros clientes. Después de la implementación de nuestros servicios, ofrecemos un sólido soporte técnico y asistencia.</h6><br>
-            <h6><b>Soporte Técnico Continuo</b></h6>
-            <h6>Una vez al mes, se incluye el soporte técnico para garantizar que tu sitio web funcione sin problemas. Estamos aquí para abordar cualquier problema técnico que pueda surgir y asegurarnos de que tu presencia en línea esté siempre en su mejor forma.</h6><br>
-            <h6><b>Costos Transparentes</b></h6>
-            <h6>Además, el costo mensual cubre el hosting de tu sitio web, lo que garantiza su disponibilidad continua en línea. Queremos que tengas total transparencia sobre los costos asociados.</h6><br>
-            <h6><b>Modificaciones Personalizadas</b></h6>
-            <h6>¿Necesitas realizar modificaciones o actualizaciones en tu sitio web? ¡Estamos aquí para ayudar! Si en algún momento deseas realizar cambios o ajustes, trabajaremos contigo para implementar las modificaciones necesarias y mantener tu sitio web actualizado.</h6><br>
-            <h6><b>Atención Personalizada</b></h6>
-            <h6>Valoramos la relación a largo plazo con nuestros clientes y nos esforzamos por proporcionar atención personalizada. Nuestro equipo está disponible para responder preguntas, brindar asesoramiento y garantizar tu satisfacción continua con nuestros servicios.</h6><br>            
-            <h6>En Tikee, no solo creamos sitios web, sino que también nos comprometemos a respaldar tu presencia en línea a medida que evoluciona. Tu éxito es nuestra prioridad, y nuestro soporte técnico refleja ese compromiso.</h6><br>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<br><br><br>
+<section id="featured-cars" class="featured-cars">
+	<div class="container">
+		<div class="section-header">
+			<h2 style="color: #000;"><b>SHOP</b></h2>
+		</div>
+		<section id="featured-cars" class="featured-cars">
+            <div class="container">
+                <div class="featured-cars-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <center>
+                                <div class="card" style="width: 18rem;">
+                                    <center>
+                                        <img class="card-img-top" src="img/raptor.jpg" style="width: 60%; padding-top: 5%;">
+                                    </center>
+                                    <div class="card-body">
+                                        <small class="marca"><b>FORD</b></small>
+                                        <h5 class="modelo"><b>RANGER RAPTOR 2.0 BITURBO</b></h5>
+                                        <a href="stepway.html" class="btn btn-vermas"><b>VER UNIDAD</b></a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <center>
+                                <div class="card" style="width: 18rem;">
+                                    <center>
+                                        <img class="card-img-top" src="img/rzr1000xp.jpg" style="width: 60%; padding-top: 5%;">
+                                    </center>
+                                    <div class="card-body">
+                                        <small class="marca"><b>POLARIS</b></small>
+                                        <h5 class="modelo"><b>RZR 1000 XP</b></h5>
+                                        <a href="sandero.html" class="btn btn-vermas"><b>VER UNIDAD</b></a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <center>
+                                <div class="card" style="width: 18rem;">
+                                    <center>
+                                        <img class="card-img-top" src="img/a5.jpg" style="width: 60%; padding-top: 5%;">
+                                    </center>
+                                    <div class="card-body">
+                                        <small class="marca"><b>AUDI</b></small>
+                                        <h5 class="modelo"><b>A5 2.0 TFSI QUATTRO</b></h5>
+                                        <a href="duster.html" class="btn btn-vermas"><b>VER UNIDAD</b></a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <center>
+                                <div class="card" style="width: 18rem;">
+                                    <center>
+                                        <img class="card-img-top" src="img/320.jpg" style="width: 60%; padding-top: 5%;">
+                                    </center>
+                                    <div class="card-body">
+                                        <small class="marca"><b>BMW</b></small>
+                                        <h5 class="modelo"><b>320i</b></h5>                                        
+                                        <a href="kangoo.html" class="btn btn-vermas"><b>VER UNIDAD</b></a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <center>
+                                <br>
+                                <a href="autos.html" class="btn btn-vermas" style="width: 100%;"><b>VER TODO</b></a>
+                            </center>										
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>					  		  
+		</div>		
+	</div>
 </section>
-<!-- End FAQ -->
 
-<!-- Contacto -->
-<div class="contacto" id="contacto">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <center>
-          <div>
-            <h5><b>- CONTACTO -</b></h5>
-            <h2 style="font-weight: bold;">¡Contactanos!</h2>            
-          </div><br>
-        </center>        
-      </div>      
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-6 col-12">
-        <center>
-          <h3 style="font-weight: bold;">¡Esperamos su mensaje!</h3>
-        <h4>Comuniquese atraves del telefono o mail que dejamos a continuación.</h4>
-        <ul>
-          <li style="list-style: none; padding: 5% 0 5% 0;"><i class="fa-brands fa-whatsapp"></i> <a><b>+54 9 11 3586-9922</b></a></li>
-          <li style="list-style: none;"><i class="fa-regular fa-envelope"></i> <a><b>fehngonzalo@gmail.com</b></a></li>
-          <li style="list-style: none; padding: 5% 0 5% 0;"><i class="fa-solid fa-location-dot"></i> <a><b>Buenos Aires, Argentina.</b></a></li>
-        </ul> 
-        </center>     
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 col-12">
-        <center>
-          <iframe style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border-radius: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.15241060659!2d-58.51570676224875!3d-34.61589254820335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705087760317!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </center>        
-      </div>
-    </div>              
-  </div>
-</div>
-<!-- End Contacto -->
+<br><br><br><br>
 
-<!-- Footer -->
-<div>
-  <br>
-  <p class="text-center" style="color: #747474;">Tikee © 2024 | All Rights Reserved</p>
-</div>    
-<!-- End Footer -->
 
-<a href="https://api.whatsapp.com/send?phone=5491135869922" target="_blank" class="dd-m-whatsapp">
-  <span class="icon"></span>
+
+
+        
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5491121561621&text=Hola%21%20Quisiera%20hacer%20una%20consulta!%20." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
 </a>
 
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 
 
-  
-<script src="https://kit.fontawesome.com/595acbccc5.js" crossorigin="anonymous"></script>    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- jQery -->
-<script src="assets/assets/js/jquery-3.4.1.min.js"></script>
-<!-- popper js -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<!-- bootstrap js -->
-<script src="assets/assets/js/bootstrap.js"></script>
-<script src="assets/assets/js/custom.js"></script>
-  
-
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
