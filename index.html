@@ -137,7 +137,14 @@
 	}
 
     .herotxt {
-        font-size: 70px;
+        margin-top: -30%;
+        font-size: 45px;
+        text-shadow: 2px 4px 5px rgba(0,0,0,0.74);
+    }
+
+    .herotxt2 {
+        
+        font-size: 35px;
         text-shadow: 2px 4px 5px rgba(0,0,0,0.74);
     }
 
@@ -204,6 +211,22 @@
 .container-icons {
     margin-top: -5%;
 }
+
+
+.btn-evento {
+    width: 100%;
+    background-color: #000;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    font-family: poppins, sans-serif;
+    text-decoration: none !important;
+}
+
+.videomeet {
+    width: 100%;
+    height: 60vh;
+}
 </style>
 </head>
 
@@ -222,8 +245,6 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link" style="color: #eb00d8 !important;"><b>Home</b></a>
-                <a href="#" class="nav-item nav-link"><b>Contacto</b></a>
-                <a href="#" class="nav-item nav-link"><b>Eventos</b></a>
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b>Shop</b></a>
                     <div class="dropdown-menu m-0">
@@ -241,6 +262,8 @@
                         <a href="pista.html" class="dropdown-item"><b>Motos de Pista</b></a>
                     </div>
                 </div>
+                <a href="#" class="nav-item nav-link"><b>Contacto</b></a>
+                <a href="#" class="nav-item nav-link"><b>Eventos</b></a>
             </div>
         </div>
     </nav>
@@ -269,7 +292,7 @@
     <div class="row align-items-center h-100">
       <div class="container rounded">
         <div class="section-header">
-            <h2 style="color: #000;"><b>NUESTRAS MARCAS</b></h2>
+            <h2 style="color: #000;"><b>MARCAS QUE COMERCIALIZAMOS</b></h2>
         </div>
         <div class="slider">
           <div class="logos">
@@ -287,7 +310,9 @@
   
   </div>
 
+
 <br><br><br><br>
+
 
 <div class="container">
     <div class="row">
@@ -344,6 +369,33 @@
 </div>
 
 <br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="section-header">
+            <h2 style="color: #000;"><b>EVENTOS</b></h2>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <center>
+                <video class="videomeet" src="img/shellnigth.mp4" muted autoplay></video>
+            </center>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <center><br>
+                <div class="section-header">
+                    <h3 style="color: #000; text-align: left;"><b>¡ENTERATE DE TODOS LOS EVENTOS!</b></h3>
+                </div><br>
+                <div class="section-header">
+                    <h3 style="color: #414141; text-align: left;">Enterate de todos los eventos de autos, motocross, utv y demás de Argentina en nuestra sección eventos, como tambien en nuestras redes sociales.</h3>
+                </div><br>
+                <a class="btn btn-evento" href="eventos.html" class="float"><b>PROXIMOS EVENTOS</b></a>
+            </center>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+
 
 <footer class="text-center text-lg-start" style="background-image: #212529;">
     <div class="container d-flex justify-content-center py-5">        
